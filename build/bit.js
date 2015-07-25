@@ -53,6 +53,12 @@ Function.prototype.callIf = function (condition) {
     }
   };
 };
+Function.prototype.format = function (formatter) {
+  var original = this;
+  return function () {
+    return formatter(original.apply(this, argsToArray(arguments)));
+  };
+};
   var bit = {};
   var root = this;
   if (typeof exports !== 'undefined') {

@@ -4,7 +4,7 @@ A set of utility functions for JavaScript functions.
 
 ---
 
-## Installation
+### Installation
 
 If you want to use **Bit.js** in the browser simply download `build/bit.min.js` and include it in your page:
 
@@ -24,7 +24,7 @@ require('bit.js');
 ```
 ---
 
-## API (well, not exactly ...)
+# API (well, not exactly ...)
 
 There is no initialization or calling a constructor. Once **Bit.js** is loaded it registers bunch of functions to `Function.prototype`. So the following functions are available on the fly.
 
@@ -99,4 +99,19 @@ var feedNightsWatch = function (time) {
 feedNightsWatch(8); // eating ...
 feedNightsWatch(22); // eating ...
 feedNightsWatch(-2); // no eating
+```
+
+### f.format([formatter function])
+
+Process/format the result of your function.
+
+```js
+var theTruth = function (result) {
+  return result === 'Reek' ? 'Theon Greyjoy' : result;
+};
+var whoIsTheonGreyjoy = function () {
+  return 'Reek';
+}.format(theTruth);
+
+whoIsTheonGreyjoy(); // Theon Greyjoy
 ```
