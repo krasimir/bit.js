@@ -1,6 +1,6 @@
 {
   "name": "bit.js",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A set of utility functions for JavaScript functions",
   "main": "./build/bit.js",
   "author": {

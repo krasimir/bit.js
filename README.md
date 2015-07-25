@@ -69,3 +69,17 @@ amIAryaStark(); // Yes, I am
 amIAryaStark(); // You already know ... does nothing
 amIAryaStark(); // You already know ... does nothing
 ```
+
+### f.debounce([milliseconds])
+
+Limits the rate at which `f` can fire.
+
+```js
+var watchGameOfThrones = function () {
+  // ... fun
+}.debounce(604800000); // 604800000 milliseconds === 1 week
+
+watchGameOfThrones(); // It works!
+watchGameOfThrones(); // Who dies we'll see next week ... does nothing
+watchGameOfThrones(); // Next week bro, next week ... does nothing
+```

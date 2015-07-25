@@ -2,7 +2,7 @@ App.register(function () {
 
   var ui = getUI('.js-twice');
 
-  var handler = function (e, message) {
+  var handler = function (e) {
     ui.output('button clicked');
   }.twice();
 
