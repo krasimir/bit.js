@@ -52,5 +52,5 @@ var killJonSnow = function () {
 
 killJonSnow(); // Nooooo, he is dead
 killJonSnow(); // You already killed it
-killJonSnow(); // ... seriously, he is dead
+killJonSnow(); // ... seriously, he IS dead
 ```
