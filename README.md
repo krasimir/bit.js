@@ -1,2 +1,3 @@
-# bit.js
-A set of utility functions for JavaScript functions
+# Bit.js
+
+A set of utility functions for JavaScript functions.

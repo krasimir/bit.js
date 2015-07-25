@@ -1,0 +1,36 @@
+{
+  "name": "bit.js",
+  "version": "0.0.1",
+  "description": "A set of utility functions for JavaScript functions",
+  "main": "",
+  "author": {
+    "name": "Krasimir Tsonev",
+    "email": "info@krasimirtsonev.com",
+    "url": "http://krasimirtsonev.com"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "3.0.0",
+    "gulp": "3.9.0",
+    "gulp-concat": "2.6.0",
+    "gulp-rename": "1.2.2",
+    "gulp-uglify": "1.2.0",
+    "gulp-util": "3.0.6",
+    "jshint": "2.5.10",
+    "mocha": "2.0.1"
+  },
+  "keywords": [
+    "utility",
+    "functions",
+    "extend",
+    "prototype"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krasimir/bit.js.git"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --ui tdd --recursive ./tests/*.spec.js && (./node_modules/jshint/bin/jshint lib/ ; echo)"
+  }
+}
