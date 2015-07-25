@@ -53,6 +53,18 @@
       </div>
     </section>
 
+    <section class="js-callIf">
+      <h1>.callIf</h1>
+      <hr />
+      <div class="row">
+        <div class="left">
+          <button>Yes</button>
+          <button>No</button>
+        </div>
+        <div class="right output"></div>
+      </div>
+    </section>
+
     <script>
       var App = {
         examples: [],
@@ -72,6 +84,7 @@
     <script src="./example.once.js"></script>
     <script src="./example.twice.js"></script>
     <script src="./example.debounce.js"></script>
+    <script src="./example.callIf.js"></script>
     <script>
       window.onload = App.run.bind(App);
     </script>
