@@ -1,6 +1,6 @@
 # Bit.js
 
-A set of utility functions for JavaScript functions.
+A set of utility functions for JavaScript functions. The library adds goodies to `Function.prototype`.
 
 ## Installation
 
