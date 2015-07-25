@@ -115,3 +115,10 @@ var whoIsTheonGreyjoy = function () {
 
 whoIsTheonGreyjoy(); // Theon Greyjoy
 ```
+
+### f.middlewares(...args)
+
+Pass as many functions are you need. They'll be run against the result of your function one by one.
+
+```js
+```
