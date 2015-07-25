@@ -1,0 +1,3 @@
+Function.prototype.callWith = function () {
+  
+};

@@ -31,6 +31,6 @@
     "url": "https://github.com/krasimir/bit.js.git"
   },
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --ui tdd --recursive ./tests/*.spec.js && (./node_modules/jshint/bin/jshint lib/ ; echo)"
+    "test": "./node_modules/mocha/bin/mocha --ui tdd --recursive ./tests/*.spec.js && (./node_modules/jshint/bin/jshint build/bit.js ; echo)"
   }
 }
