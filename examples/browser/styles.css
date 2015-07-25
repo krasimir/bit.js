@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: Helvetica, Verdana;
+  font-size: 20px;
+  margin: 0;
+}
+section {
+  padding: 1em;  
+  margin: 0 0 0.4em 0;
+  height: 200px;
+}
+.output {
+  overflow-y: scroll;
+  font-size: .8em;
+  padding: .2em;
+  max-height: 200px;
+}
+h1 {
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0;
+}
+hr {
+  border-top: none;
+  border-bottom: dotted 1px #999;
+  margin: 0.4em 0 .8em 0;
+}
+.row::after {
+  clear: both;
+  content: " ";
+  display: table;
+}
+.left {
+  float: left;
+  width: 50%;
+}
+.right: {
+  float: right;
+  width: 50%;
+}
+button {
+  border: solid 2px #217891;
+  padding: .6em .8em;
+  border-radius: 0.3em;
+  font-size: .7em;
+  background: #63C0DB;
+  cursor: pointer;
+}
+button:hover {
+  color: #444;
+}
+button:active {
+  border: solid 2px #000;
+}
+button:focus {
+  outline:0;
+}

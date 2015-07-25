@@ -18,7 +18,9 @@
     "gulp-uglify": "1.2.0",
     "gulp-util": "3.0.6",
     "jshint": "2.5.10",
-    "mocha": "2.0.1"
+    "mocha": "2.0.1",
+    "sinon": "^1.15.4",
+    "sinon-chai": "^2.8.0"
   },
   "keywords": [
     "utility",
@@ -31,6 +33,6 @@
     "url": "https://github.com/krasimir/bit.js.git"
   },
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --ui tdd --recursive ./tests/*.spec.js && (./node_modules/jshint/bin/jshint build/bit.js ; echo)"
+    "test": "./node_modules/mocha/bin/mocha --ui bdd --recursive ./tests/*.spec.js && (./node_modules/jshint/bin/jshint build/bit.js ; echo)"
   }
 }

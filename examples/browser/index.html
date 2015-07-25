@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Bit.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <section class="js-callWith">
+      <h1>.callWith</h1>
+      <hr />
+      <div class="row">
+        <div class="left">
+          <button>button A</button>
+          <button>button B</button>
+        </div>
+        <div class="right output"></div>
+      </div>
+    </section>
+    <script>
+      var App = {
+        examples: [],
+        register: function (f) {
+          this.examples.push(f);
+        },
+        run: function () {
+          this.examples.forEach(function (f) {
+            f();
+          });
+        }
+      }
+    </script>
+    <script src="./utils.js"></script>
+    <script src="../../build/bit.js"></script>
+    <script src="./example.callWith.js"></script>
+    <script>
+      window.onload = App.run.bind(App);
+    </script>
+  </body>
+</html>
