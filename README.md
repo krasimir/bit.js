@@ -83,3 +83,20 @@ watchGameOfThrones(); // It works!
 watchGameOfThrones(); // Who dies we'll see next week ... does nothing
 watchGameOfThrones(); // Next week bro, next week ... does nothing
 ```
+
+### f.callIf([condition function])
+
+Execute the function only if the `condition function` returns `true`.
+
+```js
+var isSamwellTarlyHungry = function (time) {
+  return time >= 0;
+};
+var feedNightsWatch = function (time) {
+  // eating ...
+}.callIf(isSamwellTarlyHungry);
+
+feedNightsWatch(8); // eating ...
+feedNightsWatch(22); // eating ...
+feedNightsWatch(-2); // no eating
+```
