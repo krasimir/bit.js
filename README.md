@@ -121,4 +121,17 @@ whoIsTheonGreyjoy(); // Theon Greyjoy
 Pass as many functions are you need. They'll be run against the result of your function one by one.
 
 ```js
+var answerA = function (result) {
+  result.push('the First of Her Name');
+  return result;
+};
+var answerB = function (result) {
+  result.push('the Unburnt');
+  return result;
+};
+var whoIsDaenerysTargaryen = function () {
+  return ['Mother of Dragons'];
+}.middlewares(answerA, answerB);
+
+whoIsDaenerysTargaryen(); // ["Mother of Dragons", "the First of Her Name", "the Unburnt"]
 ```
