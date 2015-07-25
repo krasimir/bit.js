@@ -54,3 +54,18 @@ killJonSnow(); // Nooooo, he is dead
 killJonSnow(); // You already killed it
 killJonSnow(); // ... seriously, he IS dead
 ```
+
+### f.twice()
+
+`f` will be called only two times.
+
+```js
+var amIAryaStark = function () {
+  // It depends who you ask
+}.twice();
+
+amIAryaStark(); // Hm ...
+amIAryaStark(); // Yes, I am
+amIAryaStark(); // You already know ...
+amIAryaStark(); // You already know ...
+```
