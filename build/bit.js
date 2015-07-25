@@ -11,6 +11,16 @@ Function.prototype.callWith = function () {
     return original.apply(this, originalArgs.concat(additionalArgs));
   };
 };
+Function.prototype.once = function () {
+  var original = this;
+  var isItCalled = false;
+  return function () {
+    if (!isItCalled) {
+      isItCalled = true;
+      return original.apply(this, argsToArray(arguments));
+    }
+  };
+};
   var bit = {};
   var root = this;
   if (typeof exports !== 'undefined') {

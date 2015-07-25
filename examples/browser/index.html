@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
+
     <section class="js-callWith">
       <h1>.callWith</h1>
       <hr />
@@ -18,6 +19,18 @@
         <div class="right output"></div>
       </div>
     </section>
+
+    <section class="js-once">
+      <h1>.once</h1>
+      <hr />
+      <div class="row">
+        <div class="left">
+          <button>button A</button>
+        </div>
+        <div class="right output"></div>
+      </div>
+    </section>
+
     <script>
       var App = {
         examples: [],
@@ -34,6 +47,7 @@
     <script src="./utils.js"></script>
     <script src="../../build/bit.js"></script>
     <script src="./example.callWith.js"></script>
+    <script src="./example.once.js"></script>
     <script>
       window.onload = App.run.bind(App);
     </script>

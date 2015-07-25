@@ -4,7 +4,7 @@ chai.use(require('sinon-chai'));
 
 var expect = chai.expect;
 
-describe('Given the Function.prototype.callWith', function() {
+describe('Given Function.prototype.callWith', function() {
 
   before(function () {
     require('../build/bit');
