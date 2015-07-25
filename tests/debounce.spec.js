@@ -4,7 +4,7 @@ chai.use(require('sinon-chai'));
 
 var expect = chai.expect;
 
-describe.only('Given Function.prototype.debounce', function() {
+describe('Given Function.prototype.debounce', function() {
 
   before(function () {
     require('../build/bit');

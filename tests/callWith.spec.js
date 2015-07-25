@@ -41,6 +41,17 @@ describe('Given Function.prototype.callWith', function() {
       expect(c.message).to.be.equal('Jon Snow: Winter is coming');
     });
 
+    it('and should be able to use .bind together', function () {
+      var context = {
+        name: 'Jon Snow'
+      };
+      var f = function (message) {
+        return this.name + ': ' + message;
+      }.bind(context).callWith('Winter is coming');
+      
+      expect(f()).to.be.equal('Jon Snow: Winter is coming');
+    });
+
   });
 
 });
