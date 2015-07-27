@@ -152,3 +152,19 @@ var TyrionLannisterIsGreatWarior = function () {
 TyrionLannisterIsGreatWarior(); // prints ':)'
 TyrionLannisterIsGreatWarior(); // prints ':)'
 ```
+
+### f.enabled([true | false])
+
+Enable or disable a function execution.
+
+```js
+var JoffreyBaratheonKillsSomeone = function () {
+  console.log('Joffrey: why not!');
+}.enabled(true);
+
+JoffreyBaratheonKillsSomeone(); // Joffrey: why not!
+JoffreyBaratheonKillsSomeone(); // Joffrey: why not!
+JoffreyBaratheonKillsSomeone.enabled(false);
+JoffreyBaratheonKillsSomeone(); // does nothing
+JoffreyBaratheonKillsSomeone(); // does nothing
+```
