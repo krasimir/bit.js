@@ -65,11 +65,21 @@ Function.prototype.middlewares = function () {
   var process = function (result) {
     if (middlewares.length === 0) return result;
     return process(middlewares.shift()(result));
-  }
+  };
   return function () {
     return process(original.apply(this, argsToArray(arguments)));
   };
 };
+Function.prototype.observe = function (handler) {
+  var original = this;
+  return function () {
+    var result = original.apply(this, argsToArray(arguments));
+    handler(result);
+    return result;
+  };
+};
+// allows to enable and disable a function
+// solves the problem of having a flag
   var bit = {};
   var root = this;
   if (typeof exports !== 'undefined') {

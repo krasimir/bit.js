@@ -135,3 +135,20 @@ var whoIsDaenerysTargaryen = function () {
 
 whoIsDaenerysTargaryen(); // ["Mother of Dragons", "the First of Her Name", "the Unburnt"]
 ```
+
+### f.observe([function])
+
+`[function]` will be called when `f` is executed. The observer will receive the output of the original function.
+
+```js
+var smile = function () {
+  console.log(':)');
+};
+
+var TyrionLannisterIsGreatWarior = function () {
+  // no way
+}.observe(smile);
+
+TyrionLannisterIsGreatWarior(); // prints ':)'
+TyrionLannisterIsGreatWarior(); // prints ':)'
+```
