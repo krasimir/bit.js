@@ -12,7 +12,7 @@ describe('Given Function.prototype.enabled', function() {
 
   describe('when enabled is used', function () {
 
-    it('should return formatted result', function () {
+    it('should disable and enable a function execution', function () {
       var spy = sinon.spy();
       var f = function () { spy(); return f; }.enabled(false);
       f();
@@ -22,6 +22,17 @@ describe('Given Function.prototype.enabled', function() {
       f();
       f();
       f.enabled(false);
+      f();
+      f();
+      expect(spy.callCount).to.be.equal(3);
+    });
+
+    it('should allow chaining', function () {
+      var spy = sinon.spy();
+      var f = function () { spy(); return f; }.enabled(false);
+      f();
+      f();
+      f.enabled(true)()()().enabled(false);
       f();
       f();
       expect(spy.callCount).to.be.equal(3);
